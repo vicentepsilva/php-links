@@ -39,7 +39,7 @@ def checkout () {
 //    	sh 'git log -1 --pretty=%B > commit-log.txt'
 //    	GIT_COMMIT=readFile('commit-log.txt').trim()
 //    	slackSend channel: 'aristides', color: '#37d660', message: ":metal: - PROJECT - ${env.JOB_NAME} - BUILD - ${env.BUILD_NUMBER} - (${GIT_COMMIT}) - Pipeline Started! "
-}
+//}
 
 def branchDeploy () {
 	stage 'branchDeploy'
@@ -157,4 +157,4 @@ def promotePROD () {
 //	sh 'git log -1 --pretty=%B > commit-log.txt'
 //	GIT_COMMIT=readFile('commit-log.txt').trim()
 //	slackSend channel: 'aristides', color: '#1e602f', message: ":rocket: - PROJECT - ${env.JOB_NAME} - BUILD - ${env.BUILD_NUMBER} - (${GIT_COMMIT}) - Now running in PROD!"
-}
+//}
